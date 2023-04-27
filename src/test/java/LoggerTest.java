@@ -19,12 +19,12 @@ public class LoggerTest {
     @Test
     public void testLogDefaultLogLevel() {
         String message = "Test log message";
-        String expectedLogMessage = "[DEBUG]";
+        String expectedLogMessage = "[INFO]";
 
         logger.log(message);
-        String actualLogMessage = logger.formatMessage(LogLevel.DEBUG, message).substring(0, 7);
+        String actualLogMessage = logger.formatMessage(LogLevel.INFO, message).substring(0, 7);
 
-        assertEquals("[DEBUG]", expectedLogMessage, actualLogMessage);
+        assertEquals("[INFO]", expectedLogMessage, actualLogMessage);
     }
 
     /**
@@ -61,7 +61,7 @@ public class LoggerTest {
     @Test
     public void testSetLogLevel() {
         LogTarget logTarget = new LogTarget("newTarget");
-        LogLevel expectedLevel = LogLevel.WARNING;
+        LogLevel expectedLevel = LogLevel.WARN;
 
         logger.setLogLevel(logTarget, expectedLevel);
         LogLevel actualLevel = logger.getLogLevelMap().get(logTarget);

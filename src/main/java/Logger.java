@@ -9,7 +9,7 @@ import java.util.Map;
 
 /**
  * The Logger class provides a simple and customizable logging solution for Java applications.
- * It allows for the configuration of multiple log targets with different logging levels, and supports asynchronous logging.
+ * It allows for the configuration of multiple log targets with different logging levels.
  */
 @Data
 public class Logger {
@@ -23,11 +23,11 @@ public class Logger {
     }
 
     /**
-     * Logs the given message with the default logging level (DEBUG) to all log targets.
+     * Logs the given message with the default logging level (INFO) to all log targets.
      * @param message the message to log
      */
     public void log(String message) {
-        log(message, LogLevel.DEBUG);
+        log(message, LogLevel.INFO);
     }
 
     /**

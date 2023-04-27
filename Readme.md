@@ -1,6 +1,6 @@
 # Logger Library
 
-The Logger Library provides a simple and customizable logging solution for Java applications. It allows for the configuration of multiple log targets with different logging levels, and supports asynchronous logging.
+The Logger Library provides a simple and customizable logging solution for Java applications. It allows for the configuration of multiple log targets with different logging levels.
 
 ## Usage
 
